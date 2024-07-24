@@ -3,10 +3,13 @@ cmake_minimum_required(VERSION 3.6)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_BUILD_TYPE Debug)
+set(EXECUTABLE_OUTPUT_PATH "bin")
 
 project(MiniEngine)
 
-option(PLATFORM_WINDOWS "Build for windows?" ON)
+option(PLATFORM_WINDOWS "Build for windows?" OFF)
 
 # Only Defined when building the engine itself.
 list(APPEND COMPILE_DEFS "MINIENGINE_BUILD")
