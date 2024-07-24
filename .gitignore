@@ -1,4 +1,4 @@
-#Directories
+# Directories
 bin/
 .vs/
 .cache/
@@ -7,10 +7,15 @@ Debug/
 MiniEngine.dir/
 x64/
 
-#Extensions
+# Extensions
 **.vcxproj
 **.filters
 **.cmake
 CMakeCache.txt
 **.sln
 **.user
+
+# Generated files
+Makefile
+compile_commands.json
+libMiniEngine.a
